@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+{% block a %}
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Bootstrap Footer CSS -->
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="title icon" type="image/png" href="images/title-img.png"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- fontawesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+  <!-- Bootstrap Footer CSS  end-->
+
+  <title>DBD</title>
+</head>
+<body>
+<div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'index' %}"><bold>DBD</bold></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+<!--        <li class="nav-item active">-->
+<!--          <a class="nav-link" href="sign_in">Sign in <span class="sr-only">(current)</span></a>-->
+<!--        </li>-->
+        <li class="nav-item">
+          <a class="nav-link" href="team">Our Team</a>
+        </li>
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="help">Help</a>-->
+<!--        </li>-->
+        </ul>
+
+    </div>
+  </nav>
+{% endblock %}
+
+  {% block c %}
+  {% endblock %}
+
+{% block f %}
+
+
+  <!-- Footer Start -->
+<footer class="page-footer font-small blue-grey lighten-5">
+
+  <div style="background-color: #ed834a;">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3 dark-grey-text">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+        <!-- Content -->
+        <h5 class="text-uppercase font-weight-bold">DBD</h5>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <h5>DBD helps you to find out correct breed of your dog.</h5>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h5 class="text-uppercase font-weight-bold">Contact</h5>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i> Gram Baroli, SVVV, Indore</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> Deltashadow@gmail.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> + 91 9669185481</p>
+        <p>
+<!--          <i class="fas fa-print mr-3"></i> + 01 234 567 8956</p>-->
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+</div>
+
+<!-- Grid column -->
+<div class="footer-copyright text-center text-black-50 py-3">
+  <div>
+      <a href="#"><i class="fab fa-facebook fa-3x text-primary mx-2"></i></a>
+      <a href="#"><i class="fab fa-google-plus fa-3x text-danger mx-2"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-3x text-info mx-2"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in fa-3x text-info mx-2"></i></a>
+      <a href="#"><i class="fab fa-instagram  fa-3x text-danger mx-2"></i></a>
+  </div>
+</div>
+<!-- Grid column -->
+
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center text-black-50 py-3">© 2021 Copyright:
+    <a class="dark-grey-text" href="{% url 'index' %}">www.DBD.com</a>
+  </div>
+
+</footer>
+<!-- Footer -->
+{% endblock %}
+</body>
+
+</html>

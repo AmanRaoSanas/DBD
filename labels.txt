@@ -1,0 +1,6 @@
+0 Chihuahua
+1 Golden Retriever
+2 Indie
+3 Pomeranian
+4 Poodle
+5 Siberian Husky

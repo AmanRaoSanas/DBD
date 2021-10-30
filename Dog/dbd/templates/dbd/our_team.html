@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% extends "dbd/nav.html" %}
+    <title>Our Team</title>
+ {% block c %}
+<style>
+	body {
+<!--		color: #fff;-->
+<!--		background: #63738a;-->
+		font-family: 'Roboto', sans-serif;
+	}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+
+  <!--watson assitant-->
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "a2c462fb-3502-44f6-b588-fcc4b94dc2d4", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "95fd5574-930a-463a-85d2-4b8369982780", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+</head>
+<body>
+{% load static %}
+
+<div class="about-section">
+  <h1>Our Team</h1>
+  <p>We are here to help in finding out best car out of the Indian market in your buget.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row" style="padding-left: 10%; padding-right: 10%;">
+
+  <div class="column">
+    <div class="card">
+      <center><img src="{% static 'dbd/ak.png' %}" class="rounded" alt="Aakash Jain" style="width:90%"></center>
+      <div class="container">
+        <h2>Aakash Jain</h2>
+        <p class="title">Designer</p>
+        <p>full stack developer</p>
+        <p>Akkujain2810@gmail.com</p>
+        <center>
+        <a href="https://www.linkedin.com/in/aakash-jain-66b3861ba/"><i class="fab fa-linkedin fa-2x text-secondary"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=akkujain2810@gmail.com/"><i class="fas fa-at fa-2x text-secondary"></i></a>
+        <a href="https://github.com/aakashjain1234/"><i class="fab fa-github-square fa-2x text-secondary"></i></a>
+        <a href="https://www.instagram.com/aakashjain2810//"><i class="fab fa-instagram fa-2x text-secondary"></i></i></a>
+        <br><br>
+        </center>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <center><img src="{% static 'dbd/me.jpeg' %}" class="rounded" alt="Aman Rao Sanas" style="width:90%"></center>
+      <div class="container">
+        <h2>Aman Rao Sanas</h2>
+        <p class="title">Project manager</p>
+        <p>full stack developer</p>
+        <p>Amnsns17@gmail.com</p>
+        <center>
+        <a href="https://www.linkedin.com/in/amanraosanas/"><i class="fab fa-linkedin fa-2x text-secondary"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=amnsns17@gmail.com/"><i class="fas fa-at fa-2x text-secondary"></i></a>
+        <a href="https://github.com/AmanRaoSanas/"><i class="fab fa-github-square fa-2x text-secondary"></i></a>
+        <a href="https://www.instagram.com/amanraosanas17/"><i class="fab fa-instagram fa-2x text-secondary"></i></i></a>
+        <br><br>
+        </center>
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+  <div class="card">
+      <center><img src="{% static 'dbd/cm.png' %}" class="rounded" alt="Chaitanya Mishra" style="width:90%"></center>
+      <div class="container">
+        <h2>Chaitanya Mishra</h2>
+        <p class="title">Project manager</p>
+        <p>full stack developer</p>
+        <p>Chaitanyamishra921@gmail.com</p>
+        <center>
+        <a href="https://www.linkedin.com/in/amanraosanas/"><i class="fab fa-linkedin fa-2x text-secondary"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chaitanyamishra921@gmail.com/"><i class="fas fa-at fa-2x text-secondary"></i></a>
+        <a href="https://github.com/AmanRaoSanas/"><i class="fab fa-github-square fa-2x text-secondary"></i></a>
+        <a href="https://www.instagram.com/amanraosanas17/"><i class="fab fa-instagram fa-2x text-secondary"></i></i></a>
+        <br><br>
+        </center>
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+      <center><img src="{% static 'dbd/np.png' %}" class="rounded" alt="Nayanpreet Chhabra" style="width:90%"></center>
+      <div class="container">
+        <h2>Nayanpreet Chhabra</h2>
+        <p class="title">Project manager</p>
+        <p>full stack developer</p>
+        <p>Nayanpreet9261@gmail.com</p>
+        <center>
+        <a href="https://www.linkedin.com/in/nayanpreet-chhabra-5b0092169/"><i class="fab fa-linkedin fa-2x text-secondary"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nayanpreet9261@gmail.com/"><i class="fas fa-at fa-2x text-secondary"></i></a>
+        <a href="https://github.com/nayanpreet/"><i class="fab fa-github-square fa-2x text-secondary"></i></a>
+        <a href="https://www.instagram.com/_preet.chhabra/"><i class="fab fa-instagram fa-2x text-secondary"></i></i></a>
+        <br><br>
+        </center>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <center><img src="{% static 'dbd/pj.png' %}" class="rounded" alt="Pragya Jain" style="width:90%"></center>
+      <div class="container">
+        <h2>Pragya Jain</h2>
+        <p class="title">Designer</p>
+        <p>full stack developer</p>
+        <p>Pragyajai18@svvv.edu.in</p>
+        <center>
+        <a href="https://www.linkedin.com/in/aakash-jain-66b3861ba/"><i class="fab fa-linkedin fa-2x text-secondary"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=Pragyajai18@svvv.edu.in/"><i class="fas fa-at fa-2x text-secondary"></i></a>
+        <a href="https://github.com/aakashjain1234/"><i class="fab fa-github-square fa-2x text-secondary"></i></a>
+        <a href="https://www.instagram.com/aakashjain2810//"><i class="fab fa-instagram fa-2x text-secondary"></i></i></a>
+        <br><br>
+        </center>
+      </div>
+    </div>
+  </div>
+
+</div>
+ {% endblock %}
+
+</body>
+</html>

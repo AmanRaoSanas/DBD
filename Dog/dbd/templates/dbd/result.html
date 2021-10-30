@@ -1,0 +1,29 @@
+{% extends "dbd/nav.html" %}
+ {% block c %}
+
+
+<div class="container">
+<table class="table table">
+	<thead class="thead-dark">
+	<tr>
+		<th>Breed</th>
+        <th>Score</th>
+	</tr>
+	</thead>
+	<tbody>
+	<!-- jinja2 Technique -->
+	{% if d %}
+	{% for i in d %}
+	<tr>
+        <td>{{i.name}}</td>
+        <td>{{i.score}}</td>
+	</tr>
+	{% endfor %}
+	{% endif %}
+	</tbody>
+</table>
+</div>
+
+
+
+ {% endblock %}
